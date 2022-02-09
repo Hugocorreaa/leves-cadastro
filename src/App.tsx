@@ -1,25 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Input from './components/Input'
+import Title from './components/Title';
+import Logo from './assets/logoleves.png'
+import GlobalStyle from './styles/global'
+import { SectionLogInpt } from './styles/styles'
 
-function App() {
+
+
+function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Title></Title>
+      <SectionLogInpt>
+        <div id='logo-container'>
+          <img src={Logo} alt="Logo da Leves" />
+        </div>
+        <div id='input-container'>
+          <input id='nome' type="text" placeholder='Qual o seu nome? (Opcional)'/>
+          <Input question="Idade"/>
+          <Input question="Gênero"/>
+          <Input question="Estado civil"/>
+        </div>
+
+      </SectionLogInpt>
+
+
+
+      <GlobalStyle/>
+    </>
   );
 }
 
