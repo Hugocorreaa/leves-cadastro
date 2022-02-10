@@ -1,33 +1,18 @@
-import React from 'react';
-import Input from './components/Input'
-import Title from './components/Title';
-import Logo from './assets/logoleves.png'
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import MainRoutes from "./routes/index";
 import GlobalStyle from './styles/global'
-import { SectionLogInpt } from './styles/styles'
 
 
 
-function App(){
+
+const App = () => {
   return (
-    <>
-      <Title></Title>
-      <SectionLogInpt>
-        <div id='logo-container'>
-          <img src={Logo} alt="Logo da Leves" />
-        </div>
-        <div id='input-container'>
-          <input id='nome' type="text" placeholder='Qual o seu nome? (Opcional)'/>
-          <Input question="Idade"/>
-          <Input question="Gênero"/>
-          <Input question="Estado civil"/>
-        </div>
-
-      </SectionLogInpt>
-
-
-
+    <BrowserRouter>
+      <MainRoutes/>
       <GlobalStyle/>
-    </>
+    </BrowserRouter>
+
   );
 }
 
