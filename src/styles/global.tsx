@@ -12,5 +12,9 @@ export default createGlobalStyle`
         background: linear-gradient(180deg, #00A7F3 0%, rgba(104, 208, 212, 0.99) 0.01%, #007EF3 100%);
         background-repeat: no-repeat;
         font-family: 'Open Sans', sans-serif;
+
+        @media (max-width: 991px) {
+            height: auto;
+        }
     }
 `;

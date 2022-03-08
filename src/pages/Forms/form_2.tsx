@@ -16,7 +16,7 @@ const SecondForm = () => {
                 <form action="/form3">
                 <Input question="É gestante (está grávida)?" />
                     <Input question="Você tem filhos?" />
-                    <Input question="Lactante (amamente)?" />
+                    <Input question="Lactante (amamenta)?" />
                     <Input question="A qual instituição você está vinculado?" />
                     <InpuButDiv>
                         <InputButton></InputButton>
